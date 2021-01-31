@@ -23,8 +23,19 @@ const getImage = async (keyword = '', page) => {
   }
 };
 
-// const getImage = (keword = '',page ) =>{
-//   return axios.get('',{params:{q: keword, page: page}}).then(responce =>responce.data.hits);
+//
+// const getImage = ({ keword = '',page}) =>{
+//   return axios.get('',{params:{q: keword, page: page}}).then(responce => responce.data.hits);
 // }
+
+// successfully deploy only this option to the github
+
+// const getImage = (keyword, page) => {
+//   const baseUrl = `https://pixabay.com/api/?key=${API_KEY}&q=${keyword}&image_type=photo&page=${page}&per_page=12`;
+//   return axios.get(baseUrl).then(response => {
+//     // console.log(response.data);
+//     return response.data.hits;
+//   });
+// };
 
 export default getImage;
